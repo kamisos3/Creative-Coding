@@ -13,7 +13,7 @@ class Mold {
         this.stop = false // Stops movement
 
         // Sensor vars
-        this.rSensorPos = creativeVector(0, 0);
+        this.rSensorPos = createVector(0, 0);
         this.lSensorPos = createVector(0, 0);
         this.fSensorAngle = 45;
         this.sensorDist = 10;
