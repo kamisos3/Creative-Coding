@@ -6,7 +6,7 @@ function setup() {
     angleMode(DEGREES);
     d = pixelDensity();
 
-    for (let i = 0; i < num; i++) {
+    for (let i=0; i<num; i++) {
         molds[i] = new Mold();
     }
 }
@@ -15,7 +15,7 @@ function draw() {
     background(0, 5);
     loadPixels();
 
-    for (let i = 0; i < num; i++) {
+    for (let i=0; i<num; i++) {
         if (key == "s") {
             molds[i].stop = true;
             updatePixels();

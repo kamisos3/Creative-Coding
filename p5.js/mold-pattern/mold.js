@@ -6,7 +6,7 @@ class Mold {
         this.r = 0.5 // Radius
 
         // Traveling direction
-        this.heading = 45;
+        this.heading = random(360);
         this.vx = cos(this.heading); // Turns polar coordinates to cartesian coordinates
         this.vy = sin(this.heading);
         this.rotAngle = 45;
