@@ -1,13 +1,30 @@
-let m;
+let molds = []; let num = 4000;
+let d;
 
 function setup() {
     createCanvas(400, 400);
     angleMode(DEGREES);
+    d = pixelDensity();
 
-    m = new Mold();
+    for (let i = 0; i < num; i++) {
+        molds[i] = new Mold();
+    }
 }
 
 function draw() {
-    background(220);
-    m.display();
+    background(0, 5);
+    loadPixels();
+
+    for (let i = 0; i < num; i++) {
+        if (key == "s") {
+            molds[i].stop = true;
+            updatePixels();
+            noLoop();
+        } else {
+            molds[i].stop = false;
+        }
+
+        molds[i].update();
+        molds[i].display();
+    }
 }
