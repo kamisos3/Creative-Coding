@@ -12,4 +12,9 @@ function setup() {
       line(250, 0, 250, 500);
       line(0, 250, 500, 250);
 
+    // Building line repetition pattern
+      for (let x = 0; x <= width; x += spacing) {
+      posx += 1;
+
+
   }
